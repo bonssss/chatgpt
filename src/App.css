@@ -23,10 +23,7 @@ min-height: 100vh;
     border-right: 1px solid rgb(100,100, 100);
     flex: 3;
 }
-.main{
-    flex: 9;
 
-}
 
 .logo {
     margin-right: 1rem;
@@ -102,4 +99,69 @@ min-height: 100vh;
     margin-right: 2rem;
     object-fit: cover;
     font-size: 1.75rem;
+}
+
+.main{
+    display: flex;
+    flex: 9;
+    min-height: calc(100vh-14rem);
+    margin: 6rem 10rem;
+    flex-direction: column;
+    align-items: center;
+}
+.chats{
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    width: 100%;
+    max-width: 70rem;
+height: calc(100vh - 18rem);
+}
+.chatbox{
+    margin: 1rem;
+    padding: 2rem 3rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: flex-start;
+    text-align: justify;
+}
+
+.gpticon{
+    margin-right: 2rem;
+    object-fit: cover;
+    width: 3rem;
+    border-radius: 0.5rem;
+}
+.bot{
+    background: rgba(28,30, 58,1);
+    width: fit-content;
+    border-radius: 0.5rem;
+}
+
+.chatfooter{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs{
+    padding: 0.5rem;
+    background-color: rgba(28,30, 58,1);
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    width: 70rem;
+}
+.inputs>input{
+    color: white;
+    width: calc(100% - 3rem);
+    outline: none;
+    padding: 1.5rem;
+}
+.inputs>input,.sendbtn{
+    background: transparent;
+    border: none;
 }
